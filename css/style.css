@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
-body{
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
     font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
     background: url(../img/bckgr-index.jpg);
     color: #fff;
 }
@@ -9,6 +16,8 @@ body{
     background: rgb(0, 0, 0);
 }
 .navbar {
+    list-style: none;
+    display: flex;
 }
 .main {
 }
