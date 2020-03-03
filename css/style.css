@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background: url(../img/bckgr-index.jpg);
+    color: #fff;
+}
+
+.header {
+    background: rgb(0, 0, 0);
+}
+.navbar {
+}
+.main {
+}
+.logo {
+}
+.cool-section {
+}
+.card {
+}
+.card__logo {
+}
+.card__body {
+}
+.white-section {
+}
+.news {
+}
+.news__article {
+}
+.news__item {
+}
+.news__time {
+}
+.btn.news__all {
+}
+.photo {
+}
+.photo__item {
+}
+.btn {
+}
+.info {
+}
+.info__item {
+}
+.appointment {
+}
+.appointment__form {
+}
+.appointment__input {
+}
+.footer {
+}
+.footer__item {
+}
+.footer__icon {
+}
