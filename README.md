@@ -1,7 +1,7 @@
 # Техническое задание на вёрстку
 
 * Название сайта: Барбершоп «Бородинский»
-* Домен: [«Барбершоп Бородинский»](https://mebius01.github.io/barbershop/)
+* Домен: [https://mebius01.github.io/barbershop/](https://mebius01.github.io/barbershop/)
 
 ## Общие технические требования
 
