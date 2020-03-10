@@ -8,10 +8,14 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    background: url(../img/bckgr-index.jpg);
-    color: #fff;
 }
-
+li{
+    list-style: none;
+}
+li:before{
+    margin-right: 12px;
+    content:'\25C6';
+}
 .header {
     background: rgb(0, 0, 0);
 }
@@ -19,7 +23,9 @@ body {
     list-style: none;
     display: flex;
 }
-.main {
+.main-index {
+    background: url(../img/bckgr-index.jpg);
+    color: #fff;
 }
 .logo {
 }
