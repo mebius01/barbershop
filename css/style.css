@@ -12,16 +12,58 @@ body {
     color: #fff;
 }
 
-.header {
-    background: rgb(0, 0, 0);
-}
 .navbar {
     list-style: none;
     display: flex;
 }
+.header {
+    background: rgb(0, 0, 0);    
+}
+.nav {
+    width: 926px;
+    margin: auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    /* border: #fff 1px solid; */
+}
+.navbar {
+}
+.navbar__item, .login {
+    /* border: red solid 1px; */
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.active {
+    border-bottom: #fff 5px solid;
+}
+.login i{
+    color: rgb(153, 151, 151);
+    padding-right: 13px;
+}
+.navbar__item:hover, .login:hover{
+    cursor: pointer;
+    background: rgb(37, 37, 37);
+    color: #fff;
+}
+.login {
+}
 .main {
 }
-.logo {
+.logo{
+    width: 926px;
+    height: 204px;
+    margin: auto;
+    
+}
+.logo img{
 }
 .cool-section {
 }
