@@ -15,10 +15,10 @@
         <nav class="nav">
             <ul class="navbar">
                 <li class="navbar__item navbar__item--active"><a class="navbar__link" href="index.html">главная</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="">информация</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="">новости</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="">прайс-лист</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="">магазин</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#info">информация</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#news">новости</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="price.html">прайс-лист</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="catalog.html">магазин</a></li>
             </ul>
             <ul class="login">
                 <li class="login__item"><a href="" class="login__link"><i class="fas fa-sign-in-alt"></i>вход</a></li>
@@ -29,6 +29,7 @@
         <div class="logo">
            <img class="logo__img" src="img/svg/index-logo.svg" alt="логотип магазина">
         </div>
+        <a name="info"></a>
         <section class="cool-section">
             <div class="card">
                 <h2 class="card__title">быстро</h2>
@@ -61,6 +62,7 @@
         <br>
         <section class="white-section">
             <div class="news white-section--padding ">
+                <a name="news"></a>
                 <h2 class="white-title">НОВОСТИ</h2>
                 <article class="news__article">
                     <a href="" class="white-text">
@@ -123,10 +125,10 @@
                     ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
                 </p>
                 <form action="" method="post" class="appointment__form">
-                    <input type="date" name="" id="" class="appointment__input">
-                    <input type="time" name="" id="" class="appointment__input">
-                    <input type="text" name="" id="" class="appointment__input">
-                    <input type="tel" name="" id="" class="appointment__input">
+                    <input type="text" name="date" id="" placeholder="Дата ДД/ММ" class="appointment__input">
+                    <input type="text" name="time" id="" placeholder="Время ЧЧ/MM" class="appointment__input">
+                    <input type="text" name="text" id="" placeholder="Ваше имя" class="appointment__input">
+                    <input type="tel" name="tel" id="" placeholder="Ваш телефон" class="appointment__input">
                     <!-- <div class="btn-form"> -->
                         <button class="btn photo__btn--hover">ОТПРАВИТЬ</button>
                     <!-- </div> -->

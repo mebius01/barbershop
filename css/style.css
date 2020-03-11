@@ -166,10 +166,17 @@ body {
     gap: 20px;
 }
 .appointment__input {
+    padding-left: 15px;
     height: 37px;
     border: 2px black solid;
 }
-
+.appointment__input::placeholder{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
 .appointment__form button{
     align-self: end;
     width: calc(100% + 100% + 20px)
