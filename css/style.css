@@ -17,11 +17,20 @@ li:before{
     content:'\25C6';
 }
 .header {
-    background: rgb(0, 0, 0);
+    /* background: rgb(0, 0, 0); */
+    height: 73px;
+    display: flex;
+    align-items: center;
+}
+.nav {
 }
 .navbar {
     list-style: none;
     display: flex;
+}
+.nav__link{
+    /* display: flex; */
+    /* justify-content: flex-end; */
 }
 .main-index {
     background: url(../img/bckgr-index.jpg);
