@@ -41,8 +41,18 @@ body {
     text-decoration: none;
     color: #fff;
 }
-.active {
-    border-bottom: #fff 5px solid;
+.navbar__item--active{
+    position:relative;
+}
+.navbar__item--active:after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:60%;
+    height:2px;
+    margin-left:-30%;
+    border-top:5px solid #fff;
 }
 .login i{
     color: rgb(153, 151, 151);
