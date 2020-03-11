@@ -5,69 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/fcee146ba6.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="img/favico/favicon.ico">
     <title>Главана страница BORODINSKI</title>
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <ul class="navbar">
-                <li class="navbar__item"><a href=""><img src="img/svg/logo.svg" alt="логотип компании и ссылка на главную"></a></li>
-                <li class="navbar__item"><a href="">главная</a></li>
-                <li class="navbar__item"><a href="">информация</a></li>
-                <li class="navbar__item"><a href="">новости</a></li>
-                <li class="navbar__item"><a href="">прайс-лист</a></li>
-                <li class="navbar__item"><a href="">магазин</a></li>
-                <li class="navbar__item"><a href="">вход</a></li>
-            </ul>
-        </nav>
+            <nav class="nav">
+                <ul class="navbar">
+                    <li class="navbar__item"><a class="navbar__link" href="index.html">главная</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="index.html#info">информация</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="index.html#news">новости</a></li>
+                    <li class="navbar__item navbar__item--active"><a class="navbar__link" href="price.html">прайс-лист</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="catalog.html">магазин</a></li>
+                </ul>
+                <ul class="login">
+                    <li class="login__item"><a href="" class="login__link"><i class="fas fa-sign-in-alt"></i>вход</a></li>
+                </ul>
+            </nav>
     </header>
-    <main class="main">
-        <h2 class="page-title">BARBERSHOP BORODINSKI - ПРАЙС-ЛИСТ</h2>
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ГЛАВНАЯ</a></li>
-            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ПРАЙС-ЛИСТ</a></li>
-        </ul>
-        <div class="men-classic">
-            <h1 class="blok-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
-            
-            <div class="block_2">
-                <div class="facilities">
-                    <h3 class="facilities__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
-                    <ul class="facilities__ul">
-                        <li class="facilities__item">BAXTER OF CALIFORNIA</li>
-                        <li class="facilities__item">MR NATTY</li>
-                        <li class="facilities__item">SUAVECITO</li>
-                        <li class="facilities__item">MALIN+GOETZ</li>
-                    </ul>
-                    <div class="about">
-                        <h3 class="about__title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
-                        <p class="about__body">
-                            НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС - ЭТО УНИКАЛЬНАЯ И ПРОДУМАННАЯ ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО.
+    <div class="container">
+        <main class="main">
+            <h2 class="page-title">BARBERSHOP BORODINSKI - ПРАЙС-ЛИСТ</h2>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ГЛАВНАЯ</a></li>
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ПРАЙС-ЛИСТ</a></li>
+            </ul>
+            <div class="men-classic">
+                <h1 class="blok-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
+                
+                <div class="block_2">
+                    <div class="facilities">
+                        <h3 class="facilities__title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h3>
+                        <ul class="facilities__ul">
+                            <li class="facilities__item">BAXTER OF CALIFORNIA</li>
+                            <li class="facilities__item">MR NATTY</li>
+                            <li class="facilities__item">SUAVECITO</li>
+                            <li class="facilities__item">MALIN+GOETZ</li>
+                        </ul>
+                        <div class="about">
+                            <h3 class="about__title">НЕСКОЛЬКО СЛОВ О НАС:</h3>
+                            <p class="about__body">
+                                НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС - ЭТО УНИКАЛЬНАЯ И ПРОДУМАННАЯ ДО МЕЛОЧЕЙ РАБОТА. МЫ НЕ РАБОТАЕМ НА КОЛИЧЕСТВО, МЫ ДЕЛАЕМ КАЧЕСТВО.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h3 class="price__title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h3>
+                        <table class="price__table">
+                            <tr>
+                                <th>СТРИЖКА</th>
+                                <th>1500</th>
+                            </tr>
+                            <tr>
+                                <th>СТРИЖКА БОРОДЫ</th>
+                                <th>500</th>
+                            </tr>
+                            <tr>
+                                <th>НАКРУТКА УСОВ</th>
+                                <th>350</th>
+                            </tr>
+                        </table>
+                        <p class="price__body">
+                            НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТЬСЯ В УДОБНУЮ ДЛЯ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!
                         </p>
                     </div>
                 </div>
-                <div class="price">
-                    <h3 class="price__title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h3>
-                    <table class="price__table">
-                        <tr>
-                            <th>СТРИЖКА</th>
-                            <th>1500</th>
-                        </tr>
-                        <tr>
-                            <th>СТРИЖКА БОРОДЫ</th>
-                            <th>500</th>
-                        </tr>
-                        <tr>
-                            <th>НАКРУТКА УСОВ</th>
-                            <th>350</th>
-                        </tr>
-                    </table>
-                    <p class="price__body">
-                        НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В ОБЕДЕННЫЙ ПЕРЕРЫВ. ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТЬСЯ В УДОБНУЮ ДЛЯ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!
-                    </p>
-                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-mine">
+            <div class="footer-address">
+                <p>BARBERSHOP «BORODINSKI»</p>
+                <p>АДРЕС: Г. МОСКВА, УЛ. СОБАКИ ПАВЛОВА, Д. 13</p>
+                <p>ТЕЛЕФОН: +7 (495) 666-02-666</p>
+            </div>
+            <div class="footer-social">
+                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <ul class="social">
+                    <li class="social__item"><a href="" class="social__link"><i class="fab fa-vk"></i></a></li>
+                    <li class="social__item"><a href="" class="social__link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__item"><a href="" class="social__link"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-author">
+                <p>ДИЗАЙН САЙТА:</p>
+                <a href="" class="btn btn__footer btn__footer--hover">GLUKHANKO.RU</a>
             </div>
         </div>
-    </main>
+    </footer>
+</body>
+</html>
