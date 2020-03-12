@@ -325,6 +325,7 @@ body {
 .facilities__title {
 }
 .facilities__ul {
+    /* border: 3px rebeccapurple solid; */
     /* margin-top: 20px;
     margin-bottom: 20px; */
 }
@@ -347,8 +348,6 @@ body {
 }
 .price {
     display: grid;
-    /* border: red 1px solid; */
-
 }
 table {
     width: 100%;
@@ -361,10 +360,12 @@ tr, th {
     width: 50%;
     height: 42px;
 }
-
+.price__name {
+    text-align: start;
+    padding-left: 20px;
+}
 .price__table {
 }
 .price__body {
     align-self: end;
-    
 }
