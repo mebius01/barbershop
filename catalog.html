@@ -19,6 +19,7 @@
                 <li class="navbar__item"><a class="navbar__link" href="index.html#news">новости</a></li>
                 <li class="navbar__item"><a class="navbar__link" href="price.html">прайс-лист</a></li>
                 <li class="navbar__item navbar__item--active"><a class="navbar__link" href="catalog.html">магазин</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="index.html#contact">контакты</a></li>
             </ul>
             <ul class="login">
                 <li class="login__item"><a href="" class="login__link"><i class="fas fa-sign-in-alt"></i>вход</a></li>
@@ -26,53 +27,132 @@
         </nav>
     </header>
     <div class="container">
-        <h2 class="page-title">BARBERSHOP BORODINSKI - МАГАЗИН</h2>
-        <nav class="breadcrumbs">
-            <ul class="breadcrumbs__ul">
-                <li class="breadcrumbs__li"><a href="" class="breadcrumbs__link">ГЛАВНАЯ</a></li>
-                <li class="breadcrumbs__li"><a href="" class="breadcrumbs__link">МАГАЗИН</a></li>
-                <li class="breadcrumbs__li"><a href="" class="breadcrumbs__link">СРЕДСТВА ДЛЯ УХОДА</a></li>
-            </ul>
-        </nav>
-        <main class="main">
+        <h2 class="title-h3--padding page-title">BARBERSHOP BORODINSKI - МАГАЗИН</h2>
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">ГЛАВНАЯ</a></li>
+            <span class="breadcrumbs__rb">&#9670</span>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">МАГАЗИН</a></li>
+            <span class="breadcrumbs__rb">&#9670</span>
+            <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">СРЕДСТВА ДЛЯ УХОДА</a></li>
+        </ul>
+        <main class="main-grid">
             <aside class="filter">
                 <div class="checkbox">
-                    <span class="checkbox__title">ПРОИЗВОДИТЕЛИ</span>
-                    <input type="checkbox" name="BAXTER OF CALIFORNIA" id="">BAXTER OF CALIFORNIA
-                    <input type="checkbox" name="MR NATTY" id="">MR NATTY
-                    <input type="checkbox" name="SUAVECITO" id="">SUAVECITO
-                    <input type="checkbox" name="MALIN+GOETZ" id="">MALIN+GOETZ
-                    <input type="checkbox" name="MURRAY’S" id="">MURRAY’S
-                    <input type="checkbox" name="AMERICAN CREW" id="">AMERICAN CREW
+                    <h2 class="filter-title">ПРОИЗВОДИТЕЛИ</h2>
+                    <p><input type="checkbox" name="" id="box_1"><label for="box_1">BAXTER OF CALIFORNIA</label></p>
+                    <p><input type="checkbox" name="" id="box_2"><label for="box_2">MR NATTY</label></p>
+                    <p><input type="checkbox" name="" id="box_3"><label for="box_3">SUAVECITO</label></p>
+                    <p><input type="checkbox" name="" id="box_4"><label for="box_4">MALIN+GOETZ</label></p>
+                    <p><input type="checkbox" name="" id="box_5"><label for="box_5">MURRAY’S</label></p>
+                    <p><input type="checkbox" name="" id="box_6"><label for="box_6">AMERICAN CREW</label></p>
                 </div>
                 <div class="radio">
-                    <span class="radio__title">ГРУППЫ ТОВАРОВ:</span>
-                    <input type="radio" name="" id="">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
-                    <input type="radio" name="" id="">СРЕДСТВА ДЛЯ УХОДА
-                    <input type="radio" name="" id="">АКСЕССУАРЫ
+                    <h2 class="filter-title">ГРУППЫ ТОВАРОВ:</h2>
+                    <p><input type="radio" name="radio_b" id="radio_1" checked><label for="radio_1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label></p>
+                    <p><input type="radio" name="radio_b" id="radio_2"><label for="radio_2">СРЕДСТВА ДЛЯ УХОДА</label></p>
+                    <p><input type="radio" name="radio_b" id="radio_3" disabled><label for="radio_3">АКСЕССУАРЫ</label></p>
                 </div>
             </aside>
-            <section class="card-section">
-                <article class="card">
-                    <img src="" alt="" class="card__img">
-                    <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
-                    <p class="card__description">Набор для путешествий</p>
-                    <div class="buy">
-                        <div class="buy__price">
-                            2 900 РУБ.
+            <div class="section">
+                <section class="card-section">
+                    <article class="card">
+                        <a href="item.html"><img class="card__img" src="img/catalog-content-1.jpg" alt=""></a>
+                        <div class="card__content">
+                        <div class="card__text">
+                            <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
+                            <p class="card__description">Набор для путешествий</p>
                         </div>
-                        <button class="buy__button">КУПИТЬ</button>
-                    </div>
-                </article>
-    
+                        <div class="buy btn-block">
+                            <div class="buy__price">
+                                2 900 РУБ.
+                            </div>
+                            <button class="btn buy__btn btn--hover">КУПИТЬ</button>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="img/catalog-content-2.jpg" alt="">
+                        <div class="card__content">
+                        <div class="card__text">
+                            <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
+                            <p class="card__description">lorem Набор для путешествий</p>
+                        </div>
+                        <div class="buy btn-block">
+                            <div class="buy__price">
+                                2 900 РУБ.
+                            </div>
+                            <button class="btn buy__btn btn--hover">КУПИТЬ</button>
+                        </div>
+                        </div>
+                    </article> 
+                    <article class="card">
+                        <img class="card__img" src="img/catalog-content-3.jpg" alt="">
+                        <div class="card__content">
+                        <div class="card__text">
+                            <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
+                            <p class="card__description">Набор для путешествий</p>
+                        </div>
+                        <div class="buy btn-block">
+                            <div class="buy__price">
+                                2 900 РУБ.
+                            </div>
+                            <button class="btn buy__btn btn--hover">КУПИТЬ</button>
+                        </div>
+                        </div>
+                    </article> 
+                    <article class="card">
+                        <img class="card__img" src="img/catalog-content-4.jpg" alt="">
+                        <div class="card__content">
+                        <div class="card__text">
+                            <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
+                            <p class="card__description">Набор для путешествий</p>
+                        </div>
+                        <div class="buy btn-block">
+                            <div class="buy__price">
+                                2 900 РУБ.
+                            </div>
+                            <button class="btn buy__btn btn--hover">КУПИТЬ</button>
+                        </div>
+                        </div>
+                    </article> 
+                    <article class="card">
+                        <img class="card__img" src="img/catalog-content-5.jpg" alt="">
+                        <div class="card__content">
+                        <div class="card__text">
+                            <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
+                            <p class="card__description">Набор для путешествий</p>
+                        </div>
+                        <div class="buy btn-block">
+                            <div class="buy__price">
+                                2 900 РУБ.
+                            </div>
+                            <button class="btn buy__btn btn--hover">КУПИТЬ</button>
+                        </div>
+                        </div>
+                    </article> 
+                    <article class="card">
+                        <img class="card__img" src="img/catalog-content-6.jpg" alt="">
+                        <div class="card__content">
+                        <div class="card__text">
+                            <h2 class="card__name">BAXTER OF CALIFORNIA</h2>
+                            <p class="card__description">Набор для путешествий</p>
+                        </div>
+                        <div class="buy btn-block">
+                            <div class="buy__price">
+                                2 900 РУБ.
+                            </div>
+                            <button class="btn buy__btn btn--hover">КУПИТЬ</button>
+                        </div>
+                        </div>
+                    </article>  
+                </section>
                 <ul class="pagination">
-                    <li class="pagination__li"><a href="" class="pagination__link">1</a></li>
-                    <li class="pagination__li"><a href="" class="pagination__link">2</a></li>
-                    <li class="pagination__li"><a href="" class="pagination__link">3</a></li>
-                    <li class="pagination__li"><a href="" class="pagination__link">4</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">1</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link--activ">2</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+                    <li class="pagination__item"><a href="" class="pagination__link">4</a></li>
                 </ul>
-    
-            </section>
+            </div>
         </main>
     </div>
     <footer class="footer">
