@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
 *{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 body {
@@ -10,6 +10,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     color: black;
+    background-color: rgb(246, 246, 243);
 }
 .bckgr-index {
     background: url(../img/bckgr-index.jpg);
@@ -68,7 +69,6 @@ body {
     width: 926px;
     margin: auto;
     display: block;
-    color: #fff;
 }
 .main {
     
@@ -89,23 +89,23 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-.card {
+.info-card {
     display: grid;
     justify-items: center;
     gap: 10px;
+    color: #fff;
 }
-.card__title {
+.info-card__title {
     font-size: 30px;
 }
-.card__rmb  {
+.info-card__rmb  {
     font-size: 32px;
     color: #fff;
 }
-.card__body {
+.info-card__body {
     text-align: center;
 }
-.card__body p {
+.info-card__body p {
     margin-bottom: 6px;
 }
 .white-section {
@@ -117,14 +117,54 @@ body {
     gap: 50px;
     margin-top: 35px;
 }
-.white-title {
+.page-title {
+    font-size: 28px;
+    line-height: 28px;
+}
+.title-h2 {
     font-size: 30px;
     line-height: 30px;
 }
+.title-h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.title-h3--padding {
+    padding-top: 54px;
+    padding-bottom: 24px;    
+}
+.title-h1--line {
+    overflow: hidden;
+    text-align: center;
+    font-size: 48px;
+    line-height: 42px;
+}
+.title-h1--line:before,
+.title-h1--line:after {
+	content: "";
+    display: inline-block;
+    height: 2px;
+    top: -4px;
+    width: 50%;
+    position: relative;
+    vertical-align: middle;
+    background-color: #000000;
+}
+.title-h1--line:before {
+    right: 24px;
+    margin-left: -50.3%;                                                                                                                                                         
+}
+.title-h1--line:after {
+    left: 16px;
+    margin-right: -51.2%;                                                                                                               
+}
+
+
+
+
 .white-section--padding {
     display: grid;
     padding: 0 10px;
-    /* border: red 1px solid; */
 }
 .news__article {
 }
@@ -148,15 +188,7 @@ body {
 }
 .photo__item {
 }
-.photo__btn {
-    display: flex;
-    justify-content: space-between;
-}
-.photo__btn--hover:hover{
-    cursor: pointer;
-    background-color: rgb(102, 61, 21);
-    color: black;
-}
+
 .info {
 }
 .info__item {
@@ -230,6 +262,16 @@ body {
     background-color: #fff;
     color: black;
 }
+.btn-block {
+    display: flex;
+    justify-content: space-between;
+    /* height: 100%; */
+}
+.btn--hover:hover{
+    cursor: pointer;
+    background-color: rgb(102, 61, 21);
+    color: black;
+}
 .btn { 
     border: none;
     text-decoration: none;
@@ -250,4 +292,79 @@ body {
 }
 
 .footer__icon {
+}
+/* ------------ price.html ----------------- */
+
+
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+}
+.breadcrumbs__rb {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.breadcrumbs__item {
+}
+.breadcrumbs__link {
+    text-decoration: none;
+    color: #000000;
+}
+.men-classic {
+}
+.blok-title {
+}
+.block_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+}
+.facilities {
+    /* border: red 1px solid; */
+}
+.facilities__title {
+}
+.facilities__ul {
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+.facilities__item {
+    line-height: 2.5;
+    list-style-type: none                                                                                                               ;
+}
+.facilities__item::before{
+    padding-right: 12px;
+    content: '\25C6';
+}
+.about {
+    display: grid;
+}
+.about__title {
+    
+}
+.about__body {
+    line-height: 2;
+}
+.price {
+    display: grid;
+    /* border: red 1px solid; */
+
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, tr, th {
+    border: 2px solid black;
+}
+tr, th {
+    width: 50%;
+    height: 42px;
+}
+
+.price__table {
+}
+.price__body {
+    align-self: end;
+    
 }
