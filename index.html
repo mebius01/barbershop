@@ -11,6 +11,7 @@
     <title>Главана страница BORODINSKI</title>
 </head>
 <body class="bckgr-index">
+
     <header class="header">
         <nav class="nav">
             <ul class="navbar">
@@ -22,11 +23,32 @@
                 <li class="navbar__item"><a class="navbar__link" href="index.html#contact">контакты</a></li>
             </ul>
             <ul class="login">
-                <li class="login__item"><a href="" class="login__link"><i class="fas fa-sign-in-alt"></i>вход</a></li>
+                <li class="login__item"><a href="login.html" class="login__link"><i class="fas fa-sign-in-alt"></i>вход</a></li>
             </ul>
         </nav>
     </header>
-    <br>
+
+    <div class="modal card">
+        <button type="submit" class="close" href=""><i class="fas fa-times"></i></button>
+        <div class="modal_container">
+            <p class="modal__title title-h3">ЛИЧНЫЙ КАБИНЕТ</p>
+            <p class="midal__text">
+                ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ ЕСЛИ ВЫ ЗАБЫЛИ ПАРОЛЬ
+            </p>
+            <form class="modal__form" action="" method="post">
+                <input class="modal__form--login" type="text" name="login" id="id_ligin" placeholder="логин">
+                <input class="modal__form--pass" type="password" name="password" id="id_password" placeholder="пароль">
+                <div class="modal__forget">
+                    <p>
+                        <input type="checkbox" name="remember" id="id_remember"><label for="remember">Запомнить пароль</label>
+                    </p>
+                    <a href="" class="form__forgot">Я ЗАБЫЛ ПАРОЛЬ!</a>
+                </div>
+                <button class="btn btn--hover">войти</button>
+            </form>
+        </div>
+    </div>
+
     <div class="container">
         <main class="main">
             <div class="logo">
@@ -86,8 +108,8 @@
                     <img class="photo__item" src="img/interior-1.jpg" alt="Интерьер барбершопа">
                     <!-- <img src="img/bckgr-index.jpg" alt=""> -->
                     <div class="btn-block">
-                        <a href="" class="btn btn--hover">НАЗАД</a>
-                        <a href="" class="btn btn--hover">ВПЕРЕД</a>
+                        <a href="" class="btn btn--smol btn--hover">НАЗАД</a>
+                        <a href="" class="btn btn--smol btn--hover">ВПЕРЕД</a>
                     </div>
                 </div>
             </section>
@@ -117,8 +139,8 @@
                         </p>
                     </div>
                     <div class="btn-block">
-                        <a class="btn btn--hover">КАК ПРОЕХАТЬ</a>
-                        <a class="btn btn--hover">ОБРАТНАЯСВЯЗЬ</a>
+                        <a class="btn btn--smol btn--hover">КАК ПРОЕХАТЬ</a>
+                        <a class="btn btn--smol btn--hover">ОБРАТНАЯСВЯЗЬ</a>
                     </div>
                 </div>
                 <div class="appointment white-section--padding ">
@@ -159,9 +181,10 @@
             </div>
             <div class="footer-author">
                 <p>ДИЗАЙН САЙТА:</p>
-                <a href="" class="btn btn__footer btn__footer--hover">GLUKHANKO.RU</a>
+                <a href="" class="btn btn--smol btn__footer btn__footer--hover">GLUKHANKO.RU</a>
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

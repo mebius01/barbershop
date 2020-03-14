@@ -26,6 +26,27 @@
             </ul>
         </nav>
     </header>
+    <div class="modal card">
+            <button type="submit" class="close" href=""><i class="fas fa-times"></i></button>
+            <div class="modal_container">
+                <p class="modal__title title-h3">ЛИЧНЫЙ КАБИНЕТ</p>
+                <p class="midal__text">
+                    ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ ЕСЛИ ВЫ ЗАБЫЛИ ПАРОЛЬ
+                </p>
+                <form class="modal__form" action="" method="post">
+                    <input class="modal__form--login" type="text" name="login" id="id_ligin" placeholder="логин">
+                    <input class="modal__form--pass" type="password" name="password" id="id_password" placeholder="пароль">
+                    <div class="modal__forget">
+                        <p>
+                            <input type="checkbox" name="remember" id="id_remember"><label for="remember">Запомнить пароль</label>
+                        </p>
+                        <a href="" class="form__forgot">Я ЗАБЫЛ ПАРОЛЬ!</a>
+                    </div>
+                    <button class="btn btn--hover">войти</button>
+                </form>
+            </div>
+        </div>
+    
     <div class="container">
             <h2 class="page-title title-h3--padding">BARBERSHOP BORODINSKI - ПРАЙС-ЛИСТ</h2>
             <ul class="breadcrumbs">
@@ -98,9 +119,10 @@
             </div>
             <div class="footer-author">
                 <p>ДИЗАЙН САЙТА:</p>
-                <a href="" class="btn btn__footer btn__footer--hover">GLUKHANKO.RU</a>
+                <a href="" class="btn btn--smol btn__footer btn__footer--hover">GLUKHANKO.RU</a>
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

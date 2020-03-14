@@ -12,6 +12,84 @@ body {
     color: black;
     background-color: rgb(246, 246, 243);
 }
+/* -------- Title h1 h2 h3 ------- */
+.page-title {
+    font-size: 28px;
+    line-height: 28px;
+}
+.title-h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+.title-h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.title-h3--padding {
+    padding-top: 54px;
+    padding-bottom: 24px;
+}
+.title-h1--line {
+    overflow: hidden;
+    text-align: center;
+    font-size: 48px;
+    line-height: 42px;
+}
+.title-h1--line:before,
+.title-h1--line:after {
+	content: "";
+    display: inline-block;
+    height: 2px;
+    top: -4px;
+    width: 50%;
+    position: relative;
+    vertical-align: middle;
+    background-color: #000000;
+}
+.title-h1--line:before {
+    right: 24px;
+    margin-left: -50.3%;
+}
+.title-h1--line:after {
+    left: 16px;
+    margin-right: -51.2%;
+}
+
+/* ------ BTN ----------- */
+
+.btn-block {
+    display: flex;
+    justify-content: space-between;
+}
+.btn--hover:hover{
+    cursor: pointer;
+    background-color: rgb(102, 61, 21);
+    color: black;
+}
+.btn { 
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    height: 43px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn--smol {
+    width: 80px;
+}
+
+/* ------- index.html ------- */
+
 .bckgr-index {
     background: url(../img/bckgr-index.jpg);
 }
@@ -116,49 +194,6 @@ body {
     gap: 50px;
     margin-top: 35px;
 }
-.page-title {
-    font-size: 28px;
-    line-height: 28px;
-}
-.title-h2 {
-    font-size: 30px;
-    line-height: 30px;
-}
-.title-h3 {
-    font-size: 24px;
-    line-height: 30px;
-}
-.title-h3--padding {
-    padding-top: 54px;
-    padding-bottom: 24px;
-}
-.title-h1--line {
-    overflow: hidden;
-    text-align: center;
-    font-size: 48px;
-    line-height: 42px;
-}
-.title-h1--line:before,
-.title-h1--line:after {
-	content: "";
-    display: inline-block;
-    height: 2px;
-    top: -4px;
-    width: 50%;
-    position: relative;
-    vertical-align: middle;
-    background-color: #000000;
-}
-.title-h1--line:before {
-    right: 24px;
-    margin-left: -50.3%;
-}
-.title-h1--line:after {
-    left: 16px;
-    margin-right: -51.2%;
-}
-
-
 
 
 .white-section--padding {
@@ -212,10 +247,7 @@ body {
     font-size: 14px;
     font-weight: 700;
 }
-.appointment__form button{
-    align-self: end;
-    width: calc(100% + 100% + 20px)
-}
+
 .footer {
     background-color: rgb(37, 37, 37);
     color: #fff;
@@ -261,31 +293,7 @@ body {
     background-color: #fff;
     color: black;
 }
-.btn-block {
-    display: flex;
-    justify-content: space-between;
-    /* height: 100%; */
-}
-.btn--hover:hover{
-    cursor: pointer;
-    background-color: rgb(102, 61, 21);
-    color: black;
-}
-.btn { 
-    border: none;
-    text-decoration: none;
-    color: #fff;
-    font-size: 14px;
-    background-color: black;
-    height: 43px;
-    width: 81px;
-    padding-left: 30px;
-    padding-right: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: #fff 1px solid; */
-}
+
 .btn__footer {
     margin: 4px;
 }
@@ -561,31 +569,41 @@ tr, th {
     padding-right: 12px;
     content: '\25C6';
 }
-.login {
-
-		/* .login__item */
-
-		&__item {
-		}
-
-		/* .login__link */
-
-		&__link {
-		}
-}
-.fas {
-}
-.fa-sign-in-alt {
-}
 
 
 /* --------------- modal ---------------- */
 
 
 .modal {
-    display: grid;
+    display: none;
     width: 430px;
-    height: 460px;
+    /* height: 460px; */
+    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes bounce {
+    0%   {transform: translateY(-2000px);}
+    70%  {transform: translateY(100px);   }
+    90%  {transform: translateY(-10px);  }
+    100% {transform: translateY(0);      }
+}
+.modal-show {
+    display: grid;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+.close {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    color: hsla(0, 1%, 28%, 0.767);
+    font-size: 26px;
 }
 .modal_container {
     padding: 50px 70px;
@@ -594,28 +612,6 @@ tr, th {
     padding-bottom: 25px;
 }
 
-.appointment__form {
-    overflow:hidden;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-.appointment__input {
-    padding-left: 15px;
-    height: 37px;
-    border: 2px black solid;
-}
-.appointment__input::placeholder{
-    color: black;
-    font-family: 'PT Sans Narrow', sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-}
-.appointment__form button{
-    align-self: end;
-    width: calc(100% + 100% + 20px)
-}
 
 .modal__form {
     display: grid;
@@ -623,6 +619,7 @@ tr, th {
 
 }
 .modal__form input {
+    outline:none;
     border: black 2px solid;
     padding: 10px;
     font-size: 14px;
@@ -647,12 +644,4 @@ tr, th {
 .form__forgot {
     justify-self: end;
     color: black;
-}
-.modal button {
-    color: #fff;
-    font-family: 'PT Sans Narrow', sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    width: 100%;
 }
