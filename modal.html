@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="login">
+        <li class="login__item"><a href="" class="login__link"><i class="fas fa-sign-in-alt"></i>вход</a></li>
+    </ul>
+    <div class="modal card">
+        <div class="modal_container">
+            <h2 class="modal__title">ЛИЧНЫЙ КАБИНЕТ</h2>
+            <p class="midal__text">
+                ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ ЕСЛИ ВЫ ЗАБЫЛИ ПАРОЛЬ
+            </p>
+            <form class="modal__form" action="" method="post">
+                <input class="modal__form--login" type="text" name="login" id="id_ligin" placeholder="логин">
+                <input class="modal__form--pass" type="password" name="passwodr" id="id_password" placeholder="пароль">
+                <div class="modal__forget">
+                    <p>
+                        <input type="checkbox" name="remember" id="id_remember"><label for="remember">Запомнить пароль</label>
+                    </p>
+                    <a href="" class="form__forgot">Я ЗАБЫЛ ПАРОЛЬ!</a>
+                </div>
+                <button class="btn btn--hover">войти</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -151,11 +151,11 @@ body {
 }
 .title-h1--line:before {
     right: 24px;
-    margin-left: -50.3%;                                                                                                                                                         
+    margin-left: -50.3%;
 }
 .title-h1--line:after {
     left: 16px;
-    margin-right: -51.2%;                                                                                                               
+    margin-right: -51.2%;
 }
 
 
@@ -292,6 +292,8 @@ body {
 
 .footer__icon {
 }
+
+
 /* ------------ price.html ----------------- */
 
 
@@ -342,7 +344,6 @@ body {
     display: grid;
 }
 .about__title {
-    
 }
 .about__body {
     line-height: 2;
@@ -504,7 +505,6 @@ tr, th {
     gap: 25px;
     padding-top: 25px;
     width: 100%;
-    /* border: 1px red solid; */
 }
 .shadow {
     box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
@@ -517,7 +517,6 @@ tr, th {
     margin: 0;
     padding-top: 0;
     padding-bottom: 24px;
-    /* border: 1px red solid; */
 }
 .product__title-h2 {
     font-size: 24px;
@@ -525,7 +524,6 @@ tr, th {
     margin: 0;
     padding-top: 0;
     padding-bottom: 40px;
-    /* border: 1px red solid; */
 }
 .product__ava {
     display: flex;
@@ -558,9 +556,103 @@ tr, th {
 .product__ul {
     line-height: 1.5;
     list-style-type: none;
-    /* border: 1px red solid; */
 }
 .product__item::before {
     padding-right: 12px;
     content: '\25C6';
+}
+.login {
+
+		/* .login__item */
+
+		&__item {
+		}
+
+		/* .login__link */
+
+		&__link {
+		}
+}
+.fas {
+}
+.fa-sign-in-alt {
+}
+
+
+/* --------------- modal ---------------- */
+
+
+.modal {
+    display: grid;
+    width: 430px;
+    height: 460px;
+}
+.modal_container {
+    padding: 50px 70px;
+}
+.modal__title, .midal__text {
+    padding-bottom: 25px;
+}
+
+.appointment__form {
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.appointment__input {
+    padding-left: 15px;
+    height: 37px;
+    border: 2px black solid;
+}
+.appointment__input::placeholder{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+.appointment__form button{
+    align-self: end;
+    width: calc(100% + 100% + 20px)
+}
+
+.modal__form {
+    display: grid;
+    gap: 10px;
+
+}
+.modal__form input {
+    border: black 2px solid;
+    padding: 10px;
+    font-size: 14px;
+}
+.modal__form input::placeholder, .modal__form input{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+.modal__form input:focus {
+    border: 2px rgb(102, 61, 21) solid;
+}
+.modal__forget {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.modal__forget input[type="checkbox"] {
+    margin-right: 12px;
+}
+.form__forgot {
+    justify-self: end;
+    color: black;
+}
+.modal button {
+    color: #fff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
 }
