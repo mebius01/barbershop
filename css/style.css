@@ -84,7 +84,7 @@ body {
     font-weight: 700;
 }
 
-.btn--smol {
+.btn--small {
     width: 80px;
 }
 
@@ -192,7 +192,6 @@ body {
     color: black;
     padding: 50px;
     gap: 50px;
-    margin-top: 35px;
 }
 
 
@@ -230,7 +229,7 @@ body {
 .appointment {
 }
 .appointment__form {
-    overflow:hidden;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -591,7 +590,7 @@ tr, th {
     100% {transform: translateY(0);      }
 }
 .modal-show {
-    display: grid;
+    display: block;
     animation-name: bounce;
     animation-duration: 0.6s;
 }

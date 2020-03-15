@@ -29,13 +29,13 @@
     </header>
 
     <div class="modal card">
-        <button type="submit" class="close" href=""><i class="fas fa-times"></i></button>
+        <button type="submit" class="close"><i class="fas fa-times"></i></button>
         <div class="modal_container">
             <p class="modal__title title-h3">ЛИЧНЫЙ КАБИНЕТ</p>
             <p class="midal__text">
                 ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ ЕСЛИ ВЫ ЗАБЫЛИ ПАРОЛЬ
             </p>
-            <form class="modal__form" action="" method="post">
+            <form class="modal__form" action="." method="post">
                 <input class="modal__form--login" type="text" name="login" id="id_ligin" placeholder="логин">
                 <input class="modal__form--pass" type="password" name="password" id="id_password" placeholder="пароль">
                 <div class="modal__forget">
@@ -58,7 +58,7 @@
             <section class="cool-section">
                 <div class="info-card">
                     <h2 class="info-card__title">быстро</h2>
-                    <p class="info-card__rmb">&#9670</p>
+                    <p class="info-card__rmb">&#9670;</p>
                     <div class="info-card__body">
                         <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА</p>
                         <p>ПРОЛЕТЯТ НЕЗАМЕТНО, И ВЫ — СЧАСТЛИВЫЙ</p>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="info-card">
                     <div class="info-card__title">круто</div>
-                    <p class="info-card__rmb">&#9670</p>
+                    <p class="info-card__rmb">&#9670;</p>
                     <div class="info-card__body">
                         <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ </p>
                         <p>СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО </p>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="info-card">
                         <div class="info-card__title">дорого</div>
-                        <p class="info-card__rmb">&#9670</p>
+                        <p class="info-card__rmb">&#9670;</p>
                         <div class="info-card__body">
                             <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА</p>
                             <p>И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ</p>
@@ -85,38 +85,38 @@
                     </div>
             </section>
             <br>
+            <a name="news"></a>
             <section class="white-section">
-                <div class="news white-section--padding ">
-                    <a name="news"></a>
+                <div class="news white-section--padding">
                     <h2 class="title-h2">НОВОСТИ</h2>
                     <article class="news__article">
                         <a href="" class="white-text">
                             НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
                         </a>
-                        <p><time class="news__time">25 сентября</time></p>
+                        <p><time datetime="2019-09-25" class="news__time">25 сентября</time></p>
                     </article>
                     <article class="news__article">
                         <a href="" class="white-text">
                             В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕТСВА ТИТУЛОВ И НАГРАД, ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
                         </a>
-                        <p><time class="news__time">19 сентября</time></p>
+                        <p><time datetime="2019-09-19" class="news__time">19 сентября</time></p>
                     </article>
-                    <a class="btn news__all btn--hover" href="">ВСЕ НОВОСТИ</a>
+                    <a class="btn  btn--small btn--hover" href="">ВСЕ НОВОСТИ</a>
                 </div>
                 <div class="photo white-section--padding ">
                     <h2 class="title-h2">ФОТОГАЛЕРЕЯ</h2>
                     <img class="photo__item" src="img/interior-1.jpg" alt="Интерьер барбершопа">
                     <!-- <img src="img/bckgr-index.jpg" alt=""> -->
                     <div class="btn-block">
-                        <a href="" class="btn btn--smol btn--hover">НАЗАД</a>
-                        <a href="" class="btn btn--smol btn--hover">ВПЕРЕД</a>
+                        <a href="" class="btn btn--small btn--hover">НАЗАД</a>
+                        <a href="" class="btn btn--small btn--hover">ВПЕРЕД</a>
                     </div>
                 </div>
             </section>
             <br>
+            <a name="contact"></a>
             <section class="white-section">
                 <div class="info white-section--padding ">
-                    <a name="contact"></a>
                     <h2 class="title-h2">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
                     <div class="q">
                         <p class="white-text">
@@ -139,8 +139,8 @@
                         </p>
                     </div>
                     <div class="btn-block">
-                        <a class="btn btn--smol btn--hover">КАК ПРОЕХАТЬ</a>
-                        <a class="btn btn--smol btn--hover">ОБРАТНАЯСВЯЗЬ</a>
+                        <a class="btn btn--small btn--hover">КАК ПРОЕХАТЬ</a>
+                        <a class="btn btn--small btn--hover">ОБРАТНАЯСВЯЗЬ</a>
                     </div>
                 </div>
                 <div class="appointment white-section--padding ">
@@ -150,14 +150,12 @@
                         <br>
                         ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
                     </p>
-                    <form action="" method="post" class="appointment__form">
-                        <input type="text" name="date" id="" placeholder="Дата ДД/ММ" class="appointment__input">
-                        <input type="text" name="time" id="" placeholder="Время ЧЧ/MM" class="appointment__input">
-                        <input type="text" name="text" id="" placeholder="Ваше имя" class="appointment__input">
-                        <input type="tel" name="tel" id="" placeholder="Ваш телефон" class="appointment__input">
-                        <!-- <div class="btn-form"> -->
-                            <button class="btn btn--hover">ОТПРАВИТЬ</button>
-                        <!-- </div> -->
+                    <form action="." method="post" class="appointment__form">
+                        <input type="text" name="date" id="id_date" placeholder="Дата ДД/ММ" class="appointment__input">
+                        <input type="text" name="time" id="id_time" placeholder="Время ЧЧ/MM" class="appointment__input">
+                        <input type="text" name="text" id="id_name" placeholder="Ваше имя" class="appointment__input">
+                        <input type="tel" name="tel" id="id_tel" placeholder="Ваш телефон" class="appointment__input">
+                        <button class="btn btn--hover">ОТПРАВИТЬ</button>
                     </form>
                 </div>
             </section>
@@ -181,7 +179,7 @@
             </div>
             <div class="footer-author">
                 <p>ДИЗАЙН САЙТА:</p>
-                <a href="" class="btn btn--smol btn__footer btn__footer--hover">GLUKHANKO.RU</a>
+                <a href="" class="btn btn--small btn__footer btn__footer--hover">GLUKHANKO.RU</a>
             </div>
         </div>
     </footer>
